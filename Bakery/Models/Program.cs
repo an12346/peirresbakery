@@ -14,65 +14,68 @@ class BakeryUI
     Console.WriteLine("Would you like to order bread or pastries?");
     string selection = Console.ReadLine();
 
-    if (selection == "bread")
-    {
-      Console.WriteLine("How many loafs of bread would you like to order?");
-      int breadOrder = int.Parse(Console.ReadLine());
-      Bread newBread = new Bread(breadOrder);
-      int breadTotal = newBread.CalBreadPrice(breadOrder);
-      Console.WriteLine("Your total is " + "$" + breadTotal + ".00");
-      Console.WriteLine("Would you like to order some pastries? (yes/no)");
+    if (selection.ToLower() == "bread")
+      {
+        Console.WriteLine("How many loafs of bread would you like to order?");
+        int breadOrder = int.Parse(Console.ReadLine());
+        Bread newBread = new Bread(breadOrder);
+        int breadTotal = newBread.CalBreadPrice(breadOrder);
+        Console.WriteLine("Your total is " + "$" + breadTotal + ".00");
+        Console.WriteLine("Would you like to order some pastries? (yes/no)");
         string pastrySelect = Console.ReadLine();
-        if (pastrySelect == "yes")
-        {
-          Console.WriteLine("How many pastries would you like to order?");
-          int pastryOrder = int.Parse(Console.ReadLine());
-          Pastry newPastry = new Pastry(pastryOrder);
-          int pastryTotal = newPastry.CalPastryPrice(pastryOrder);
-          Console.WriteLine("Your pastry total is " + "$" + pastryTotal + ".00");
-          int orderTotal = breadTotal + pastryTotal;
-          Console.WriteLine("Thank you for your order! Your total is " + "$" + orderTotal + ".00");
-        }
-        else if (pastrySelect == "no")
-        {
-          Console.WriteLine("Thank you for your order!");
-        }
-        else {
-          Console.WriteLine("Please enter either yes or no.");
-          Main();
-        }
-    }
-    else if (selection == "pastries")
-    {
-      Console.WriteLine("How many pastries would you like to order?");
-      int pastryOrder = int.Parse(Console.ReadLine());
-      Pastry newPastry = new Pastry(pastryOrder);
-      int pastryTotal = newPastry.CalPastryPrice(pastryOrder);
-      Console.WriteLine("Your total is " + "$" + pastryTotal + ".00");
-      Console.WriteLine("Would you like to order some bread? (yes/no)");
-        string breadSelect = Console.ReadLine();
-        if (breadSelect == "yes")
-        {
-          Console.WriteLine("How many loafs of bread would you like to order?");
-          int breadOrder = int.Parse(Console.ReadLine());
-          Bread newBread = new Bread(breadOrder);
-          int breadTotal = newBread.CalBreadPrice(breadOrder);
-          Console.WriteLine("Your bread total is " + "$" + breadTotal + ".00");
-          int orderTotal = breadTotal + pastryTotal;
-          Console.WriteLine("Thank you for your order! Your total is " + "$" + orderTotal + ".00");
-        }
-        else if (breadSelect == "no")
-        {
-          Console.WriteLine("Thank you for your order!");
-        }
-        else {
-          Console.WriteLine("Please enter either yes or no.");
-          Main();
-        }
-    }
-    else {
-      Console.WriteLine("Please enter either bread or pastries");
+        if (pastrySelect.ToLower() == "yes")
+          {
+            Console.WriteLine("How many pastries would you like to order?");
+            int pastryOrder = int.Parse(Console.ReadLine());
+            Pastry newPastry = new Pastry(pastryOrder);
+            int pastryTotal = newPastry.CalPastryPrice(pastryOrder);
+            Console.WriteLine("Your pastry total is " + "$" + pastryTotal + ".00");
+            int orderTotal = breadTotal + pastryTotal;
+            Console.WriteLine("Thank you for your order! Your total is " + "$" + orderTotal + ".00");
+          }
+          else if (pastrySelect.ToLower() == "no")
+            {
+              Console.WriteLine("Thank you for your order!");
+            }
+            else {
+              Console.WriteLine("Please enter either yes or no.");
+            }
+      }
+        else if (selection.ToLower() == "pastries")
+          {
+            Console.WriteLine("How many pastries would you like to order?");
+            int pastryOrder = int.Parse(Console.ReadLine());
+            Pastry newPastry = new Pastry(pastryOrder);
+            int pastryTotal = newPastry.CalPastryPrice(pastryOrder);
+            Console.WriteLine("Your total is " + "$" + pastryTotal + ".00");
+            Console.WriteLine("Would you like to order some bread? (yes/no)");
+            string breadSelect = Console.ReadLine();
+            if (breadSelect.ToLower() == "yes")
+            {
+              Console.WriteLine("How many loafs of bread would you like to order?");
+              int breadOrder = int.Parse(Console.ReadLine());
+              Bread newBread = new Bread(breadOrder);
+              int breadTotal = newBread.CalBreadPrice(breadOrder);
+              Console.WriteLine("Your bread total is " + "$" + breadTotal + ".00");
+              int orderTotal = breadTotal + pastryTotal;
+              Console.WriteLine("Thank you for your order! Your total is " + "$" + orderTotal + ".00");
+            }
+            else if (breadSelect.ToLower() == "no")
+              {
+                Console.WriteLine("Thank you for your order!");
+              }
+              else {
+                Console.WriteLine("Please enter either yes or no.");
+                }
+          }
+      else {
+      Console.WriteLine("Please enter either bread or pastries.");
       Main();
     }
   }
 }
+
+
+
+
+
