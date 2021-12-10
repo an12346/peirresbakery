@@ -47,6 +47,10 @@ namespace Bakery.Models
       {
         return 2;
       }
+      else if (amount == 3)
+      {
+        return 5;
+      }
       else {
         return 0;
       }
