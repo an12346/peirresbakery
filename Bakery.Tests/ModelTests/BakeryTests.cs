@@ -56,11 +56,11 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void CalPastryPrice_WillReturnPriceForInputtedAmount_10()
+    public void CalPastryPrice_WillReturnPriceForInputtedAmount_9()
     {
       int pastryAmount = 5;
       Pastry newPastry = new Pastry(pastryAmount);
-      Assert.AreEqual(10, newPastry.CalPastryPrice(5));
+      Assert.AreEqual(9, newPastry.CalPastryPrice(5));
     }
   
   }

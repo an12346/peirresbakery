@@ -5,61 +5,71 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public int amountBread {get; set;}
+    public int Amount {get; set;}
 
-    public Bread(int amountBread)
+    public Bread(int amount)
     {
-      amountBread = 5;
+      Amount = amount;
     }
     
     public int CalBreadPrice(int amount) 
     {
-      int breadPrice = 0;
+      int breadPrice = 5;
+      int totalBreadPrice = 0;
       
       if (amount == 1)
       {
-        return breadPrice += 5;
+        return totalBreadPrice += 5;
       }
       else if (amount == 2) 
       {
-        return breadPrice += 10;
+        return totalBreadPrice += 10;
       }
       else if (amount == 3)
       {
-        return breadPrice += 10;
+        return totalBreadPrice += 10;
       }
       else
       {
-        return breadPrice;
+        return amount * breadPrice;
       }
     }
   }
   public class Pastry
   {
-    public int amountPastry {get; set;}
-    public Pastry(int amountPastry)
+    public int Amount {get; set;}
+    public Pastry(int amount)
     {
-      amountPastry = 2;
+      Amount = amount;
     }
 
     public int CalPastryPrice(int amount)
     {
-      int pastryPrice = 0;
+      int pastryPrice = 2;
+      int totalPastryPrice = 0;
       
       if (amount == 1)
       {
-        return pastryPrice += 2;
+        return totalPastryPrice += 2;
       }
-      else if (amount == 3)
+      if (amount == 3)
       {
-        return pastryPrice += 5;
+        return totalPastryPrice += 5;
       }
       else if (amount == 4)
       {
-        return pastryPrice += 7;
+        return totalPastryPrice += 7;
+      }
+      else if (amount == 5)
+      {
+        return totalPastryPrice += 9;
+      }
+      else if (amount == 6)
+      {
+        return totalPastryPrice += 10;
       }
       else {
-        return amount * 2;
+        return amount * pastryPrice;
       }
     }
   }
