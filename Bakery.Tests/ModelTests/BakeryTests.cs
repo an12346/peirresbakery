@@ -63,5 +63,12 @@ namespace Bakery.Tests
       Assert.AreEqual(9, newPastry.CalPastryPrice(5));
     }
   
+    [TestMethod]
+    public void CalBreadPrice_WillReturnPriceForInputtedAmount_85()
+    {
+      int breadAmount = 25;
+      Bread newBread = new Bread(breadAmount);
+      Assert.AreEqual(85, newBread.CalBreadPrice(25));
+    }
   }
 }
