@@ -52,7 +52,7 @@ namespace Bakery.Tests
     {
       int pastryAmount = 4;
       Pastry newPastry = new Pastry(pastryAmount);
-      Assert.AreEqual(5, newPastry.CalPastryPrice(4));
+      Assert.AreEqual(7, newPastry.CalPastryPrice(4));
     }
   
   }
