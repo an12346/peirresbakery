@@ -5,8 +5,8 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public string Amount = " ";
-    public Bread(string amount)
+    public int Amount {get; set;}
+    public Bread(int amount)
     {
       Amount = amount;
     }
@@ -17,8 +17,11 @@ namespace Bakery.Models
       {
         return 2;
       }
-      else 
+      else if (amount == 3) 
       {
+        return 5;
+      }
+      else {
         return 0;
       }
     }
