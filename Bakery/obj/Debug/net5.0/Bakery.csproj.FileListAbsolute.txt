@@ -1,0 +1,12 @@
+/Users/annapittman/Desktop/peirresbakery/Bakery/obj/Debug/net5.0/Bakery.csproj.AssemblyReference.cache
+/Users/annapittman/Desktop/peirresbakery/Bakery/obj/Debug/net5.0/Bakery.GeneratedMSBuildEditorConfig.editorconfig
+/Users/annapittman/Desktop/peirresbakery/Bakery/obj/Debug/net5.0/Bakery.AssemblyInfoInputs.cache
+/Users/annapittman/Desktop/peirresbakery/Bakery/obj/Debug/net5.0/Bakery.AssemblyInfo.cs
+/Users/annapittman/Desktop/peirresbakery/Bakery/obj/Debug/net5.0/Bakery.csproj.CoreCompileInputs.cache
+/Users/annapittman/Desktop/peirresbakery/Bakery/bin/Debug/net5.0/Bakery.deps.json
+/Users/annapittman/Desktop/peirresbakery/Bakery/bin/Debug/net5.0/Bakery.dll
+/Users/annapittman/Desktop/peirresbakery/Bakery/bin/Debug/net5.0/ref/Bakery.dll
+/Users/annapittman/Desktop/peirresbakery/Bakery/bin/Debug/net5.0/Bakery.pdb
+/Users/annapittman/Desktop/peirresbakery/Bakery/obj/Debug/net5.0/Bakery.dll
+/Users/annapittman/Desktop/peirresbakery/Bakery/obj/Debug/net5.0/ref/Bakery.dll
+/Users/annapittman/Desktop/peirresbakery/Bakery/obj/Debug/net5.0/Bakery.pdb

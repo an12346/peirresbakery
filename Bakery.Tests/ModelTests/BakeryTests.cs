@@ -1,13 +1,20 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using ToDoList.Models;
+using Bakery.Models;
 
-namespace ToDoList.Tests
+namespace Bakery.Tests
 {
   [TestClass]
-  public class ItemTests
+  public class BakeryTests
   {
 
-    // Test methods will go here.
+    [TestMethod]
+
+    public void Bread_WillReturnPriceForALoafOfBread_2()
+    {
+      string breadAmount = "1";
+      Bread newBread = new Bread(breadAmount);
+      Assert.AreEqual(2, newBread.CalBreadPrice(2));
+    }
 
   }
 }
