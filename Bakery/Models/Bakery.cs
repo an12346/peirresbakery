@@ -8,27 +8,31 @@ namespace Bakery.Models
   public class Bread
   {
     public int Amount {get; set;}
+
     public Bread(int amount)
     {
       Amount = amount;
-    }
+      }
     
     public int CalBreadPrice(int amount) 
     {
+      int breadPrice = 0;
+      
       if (amount == 1)
       {
-        return 5;
+        return breadPrice += 5;
       }
       else if (amount == 2) 
       {
-        return 10;
+        return breadPrice += 10;
       }
       else if (amount == 3)
       {
-        return 10;
+        return breadPrice += 10;
       }
-      else {
-        return 0;
+      else
+      {
+        return breadPrice;
       }
     }
   }
