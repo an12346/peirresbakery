@@ -3,8 +3,6 @@ using System;
 
 namespace Bakery.Models
 {
-  
-  
   public class Bread
   {
     public int Amount {get; set;}
@@ -36,7 +34,6 @@ namespace Bakery.Models
       }
     }
   }
-
   public class Pastry
   {
     public int Amount {get; set;}
@@ -47,20 +44,22 @@ namespace Bakery.Models
 
     public int CalPastryPrice(int amount)
     {
+      int pastryPrice = 0;
+      
       if (amount == 1)
       {
-        return 2;
+        return pastryPrice += 2;
       }
       else if (amount == 3)
       {
-        return 5;
+        return pastryPrice += 5;
       }
       else if (amount == 4)
       {
-        return 7;
+        return pastryPrice += 7;
       }
       else {
-        return 0;
+        return pastryPrice;
       }
     }
   }
