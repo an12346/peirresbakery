@@ -5,12 +5,12 @@ namespace Bakery.Models
 {
   public class Bread
   {
-    public int Amount {get; set;}
+    public int amountBread {get; set;}
 
-    public Bread(int amount)
+    public Bread(int amountBread)
     {
-      Amount = amount;
-      }
+      amountBread = 5;
+    }
     
     public int CalBreadPrice(int amount) 
     {
@@ -36,10 +36,10 @@ namespace Bakery.Models
   }
   public class Pastry
   {
-    public int Amount {get; set;}
-    public Pastry(int amount)
+    public int amountPastry {get; set;}
+    public Pastry(int amountPastry)
     {
-      Amount = amount;
+      amountPastry = 2;
     }
 
     public int CalPastryPrice(int amount)
@@ -59,7 +59,7 @@ namespace Bakery.Models
         return pastryPrice += 7;
       }
       else {
-        return pastryPrice;
+        return amount * 2;
       }
     }
   }
