@@ -40,11 +40,11 @@ namespace Bakery.Tests
     }
 
     [TestMethod]
-    public void Pastry_WillReturnPriceForThreePastries_6()
+    public void Pastry_WillReturnPriceForThreePastries_5()
     {
       int pastryAmount = 3;
       Pastry newPastry = new Pastry(pastryAmount);
-      Assert.AreEqual(6, newPastry.CalPastryPrice(3));
+      Assert.AreEqual(5, newPastry.CalPastryPrice(3));
     }
   
   }
