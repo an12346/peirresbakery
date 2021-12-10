@@ -21,7 +21,7 @@ namespace Bakery.Tests
     {
       int breadAmount = 3;
       Bread newBread = new Bread(breadAmount);
-      Assert.AreEqual(5, newBread.CalBreadPrice(2));
+      Assert.AreEqual(5, newBread.CalBreadPrice(3));
     }
 
 
