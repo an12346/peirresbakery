@@ -13,7 +13,7 @@ namespace Bakery.Tests
     {
       string breadAmount = "1";
       Bread newBread = new Bread(breadAmount);
-      Assert.AreEqual(2, newBread.CalBreadPrice(2));
+      Assert.AreEqual(2, newBread.CalBreadPrice(1));
     }
 
   }
