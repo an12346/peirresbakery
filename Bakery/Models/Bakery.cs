@@ -3,6 +3,8 @@ using System;
 
 namespace Bakery.Models
 {
+
+  //Bread: Buy 2, get 1 free (every 3rd loaf of bread is free.). A single //loaf costs $5, two loaves costs $10, and three loaves cost $10.
   public class Bread
   {
     public int Amount {get; set;}
@@ -21,17 +23,14 @@ namespace Bakery.Models
       {
         return totalBreadPrice += 5;
       }
-      else if (amount == 2) 
-      {
-        return totalBreadPrice += 10;
-      }
-      else if (amount == 3)
+      else if (amount == 2 || amount == 3) 
       {
         return totalBreadPrice += 10;
       }
       else
       {
-        return amount * breadPrice;
+        totalBreadPrice = amount * breadPrice;
+        return totalBreadPrice;
       }
     }
   }
@@ -42,7 +41,6 @@ namespace Bakery.Models
     {
       Amount = amount;
     }
-
     public int CalPastryPrice(int amount)
     {
       int pastryPrice = 2;
@@ -69,7 +67,8 @@ namespace Bakery.Models
         return totalPastryPrice += 10;
       }
       else {
-        return amount * pastryPrice;
+        totalPastryPrice = amount * pastryPrice;
+        return totalPastryPrice;
       }
     }
   }
