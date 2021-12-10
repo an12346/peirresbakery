@@ -9,24 +9,27 @@ namespace Bakery.Tests
 
     [TestMethod]
 
-    public void Bread_WillReturnPriceForALoafOfBread_2()
+    public void Bread_WillReturnPriceForALoafOfBread_5()
     {
       int breadAmount = 1;
       Bread newBread = new Bread(breadAmount);
-      Assert.AreEqual(2, newBread.CalBreadPrice(1));
+      Assert.AreEqual(5, newBread.CalBreadPrice(1));
     }
 
     [TestMethod]
-    public void Bread_WillReturnPriceForThreeLoaves_5()
+    public void Bread_WillReturnPriceForTwoLoaves_10()
+    {
+      int breadAmount = 2;
+      Bread newBread = new Bread(breadAmount);
+      Assert.AreEqual(10, newBread.CalBreadPrice(2));
+    }
+
+    [TestMethod]
+    public void Bread_WillReturnPriceForThreeLoaves_10()
     {
       int breadAmount = 3;
       Bread newBread = new Bread(breadAmount);
-      Assert.AreEqual(5, newBread.CalBreadPrice(3));
+      Assert.AreEqual(10, newBread.CalBreadPrice(1));
     }
-
-
-
-
-
   }
 }

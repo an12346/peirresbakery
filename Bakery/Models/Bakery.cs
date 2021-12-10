@@ -15,11 +15,15 @@ namespace Bakery.Models
     {
       if (amount == 1)
       {
-        return 2;
-      }
-      else if (amount == 3) 
-      {
         return 5;
+      }
+      else if (amount == 2) 
+      {
+        return 10;
+      }
+      else if (amount == 3)
+      {
+        return 10;
       }
       else {
         return 0;
