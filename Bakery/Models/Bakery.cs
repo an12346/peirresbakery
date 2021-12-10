@@ -3,6 +3,8 @@ using System;
 
 namespace Bakery.Models
 {
+  
+  
   public class Bread
   {
     public int Amount {get; set;}
@@ -29,8 +31,26 @@ namespace Bakery.Models
         return 0;
       }
     }
-    
+  }
 
+  public class Pastry
+  {
+    public int Amount {get; set;}
+    public Pastry(int amount)
+    {
+      Amount = amount;
+    }
+
+    public int CalPastryPrice(int amount)
+    {
+      if (amount == 1)
+      {
+        return 2;
+      }
+      else {
+        return 0;
+      }
+    }
   }
 }
 

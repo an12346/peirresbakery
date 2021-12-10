@@ -8,7 +8,6 @@ namespace Bakery.Tests
   {
 
     [TestMethod]
-
     public void Bread_WillReturnPriceForALoafOfBread_5()
     {
       int breadAmount = 1;
@@ -31,5 +30,14 @@ namespace Bakery.Tests
       Bread newBread = new Bread(breadAmount);
       Assert.AreEqual(10, newBread.CalBreadPrice(3));
     }
+  
+    [TestMethod]
+    public void Bread_WillReturnPriceForOnePastry_2()
+    {
+      int pastryAmount = 1;
+      Pastry newPastry = new Pastry(pastryAmount);
+      Assert.AreEqual(10, newPastry.CalPastryPrice(1));
+    }
+  
   }
 }
