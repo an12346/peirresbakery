@@ -10,7 +10,7 @@ class BakeryUI
     Console.WriteLine("Pastries: $1.00");
     Console.WriteLine("Bread: $5.00/loaf");
     Console.WriteLine("Special pastry deal: buy 3 for $5.00, 4 for $7.00, 5 for $9.00, or 6 for $10.00");
-    Console.WriteLine("Special bread deal: Buy two loafs of bread get one free! (valid up to 3 loafs");
+    Console.WriteLine("Special bread deal: For every two loafs you buy, get one loaf free!");
     Console.WriteLine("Would you like to order bread or pastries?");
     string selection = Console.ReadLine();
 
