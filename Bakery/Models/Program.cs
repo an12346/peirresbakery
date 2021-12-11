@@ -1,6 +1,6 @@
 using System;
 using System.Collections.Generic;
-using Bakery.Models;  //import namespaces from Item.cs
+using Bakery.Models;
 
 class BakeryUI
 {
